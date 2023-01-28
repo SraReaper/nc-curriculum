@@ -1,0 +1,128 @@
+.footer {
+  background: #000000;
+  margin: 0px;
+}
+
+.footer-container {
+  margin: 0px;
+  padding: 140px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container p {
+  color: #cccccc;
+  max-width: 27ch;
+  padding-top: 20px;
+  margin: 0px;
+  font-size: 35px;
+}
+
+.footer-final {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.final {
+  margin: 0px;
+  color: #616161;
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+.footer-contato {
+  padding-left: 50px;
+  font-size: 25px;
+  color: #cccccc;
+  position: relative;
+}
+
+.footer-contato li {
+  padding-left: 80px;
+  padding-top: 20px;
+}
+
+.footer-contato li a {
+  text-decoration: none;
+  color: #800add;
+  padding-left: 38px;
+}
+
+.footer-contato li a:hover {
+  color: #cccccc;
+}
+
+.footer-contato li a::before {
+  content: "";
+  display: block;
+  height: 50px;
+  width: 50px;
+  background: url("/Img/foundation_social-linkedin\ \(1\).svg") no-repeat center;
+  position: absolute;
+  left: 125px;
+  top: 115px;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 50px;
+    margin: 0px;
+  }
+  .footer-contato {
+    padding-left: 0;
+  }
+  .footer-final {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-final p {
+    font-size: 15px;
+  }
+  .footer-contato li {
+    padding-left: 0;
+    word-break: break-all;
+    font-size: 15px;
+    text-align: end;
+  }
+  .footer-contato li a::before {
+    display: none;
+  }
+  .footer-container p {
+    font-size: 20px;
+    max-width: 30ch;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 40px;
+  }
+  .footer-contato {
+    padding-left: 0;
+  }
+  .footer-final {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-final p {
+    font-size: 12px;
+  }
+  .footer-contato li {
+    padding-left: 0;
+    word-break: break-all;
+    font-size: 15px;
+    text-align: end;
+  }
+  .footer-contato li a::before {
+    display: none;
+  }
+  .footer-container p {
+    font-size: 20px;
+    max-width: 40ch;
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px;
+  margin: 0 auto;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.header-menu a {
+  text-decoration: none;
+  padding: 12px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #000000;
+  font-weight: bold;
+  display: block;
+  background: #d2d2d2;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+
+.header-menu a:hover {
+  background: #701CDA;
+  color: #ffff;
+  border: 2px solid transparent;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+}
